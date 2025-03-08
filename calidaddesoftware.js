@@ -7,7 +7,7 @@ const catalogo = [
 
 // Mostrar catálogo
 catalogo.forEach(programa => {
-  console.log($,{programa(id)}, ${programa.nombre} ,${programa.duracion});
+  console.log(${programa.id}. ${programa.nombre} - ${programa.duracion});
 });
 
 
@@ -34,6 +34,9 @@ function enviarSolicitud() {
   alert("Solicitud enviada correctamente.");
 }
 
+
+window.catalogo = catalogo;
+window.enviarSolicitud = enviarSolicitud;
 
 window.catalogo = catalogo;
 window.enviarSolicitud = enviarSolicitud;
